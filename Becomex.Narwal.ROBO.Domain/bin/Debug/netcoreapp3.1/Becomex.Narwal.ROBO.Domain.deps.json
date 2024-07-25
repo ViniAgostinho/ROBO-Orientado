@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Becomex.Narwal.ROBO.Domain/1.0.0": {
+        "dependencies": {
+          "Becomex.Narwal.ROBO.Infra": "1.0.0"
+        },
+        "runtime": {
+          "Becomex.Narwal.ROBO.Domain.dll": {}
+        }
+      },
+      "Becomex.Narwal.ROBO.Infra/1.0.0": {
+        "runtime": {
+          "Becomex.Narwal.ROBO.Infra.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Becomex.Narwal.ROBO.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Becomex.Narwal.ROBO.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

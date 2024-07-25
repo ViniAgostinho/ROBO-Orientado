@@ -1,0 +1,13 @@
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\bin\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Domain.deps.json
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\bin\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Domain.dll
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\bin\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Domain.pdb
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\obj\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\obj\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Domain.AssemblyInfoInputs.cache
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\obj\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Domain.AssemblyInfo.cs
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\obj\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Domain.csproj.CoreCompileInputs.cache
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\obj\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Domain.dll
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\obj\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Domain.pdb
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\bin\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Infra.dll
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\bin\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Infra.pdb
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\obj\Debug\netcoreapp3.1\Becomex.Narwal.ROBO.Domain.csproj.AssemblyReference.cache
+D:\DesevRobo\Becomex.Narwal.ROBO\Becomex.Narwal.ROBO.Domain\obj\Debug\netcoreapp3.1\Becomex..140A71F8.Up2Date
