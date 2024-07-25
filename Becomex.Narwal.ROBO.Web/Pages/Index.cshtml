@@ -1,0 +1,128 @@
+﻿@page
+@using Becomex.Narwal.ROBO.Web.Models.Enumeradores
+@model IndexModel
+@{
+    ViewData["Title"] = "Controle do Robô";
+}
+
+<h1>Controle do Robô</h1>
+
+<form method="post" asp-page-handler="Inicializar">
+    <button type="submit">Inicializar Robô</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        @Model.ErrorMessage
+    </div>
+}
+
+<h2>Estado Atual do Robô</h2>
+@if (Model.Robo != null && string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div>
+        <h3>Cabeça</h3>
+        <p>Rotação: @Model.Robo.Cabeca.Rotacao</p>
+        <p>Inclinação: @Model.Robo.Cabeca.Inclinacao</p>
+
+        <h3>Braço Direito</h3>
+        <p>Cotovelo: @Model.Robo.BracoDireito.Cotovelo</p>
+        <p>Pulso: @Model.Robo.BracoDireito.Pulso</p>
+
+        <h3>Braço Esquerdo</h3>
+        <p>Cotovelo: @Model.Robo.BracoEsquerdo.Cotovelo</p>
+        <p>Pulso: @Model.Robo.BracoEsquerdo.Pulso</p>
+    </div>
+}
+
+<h2>Movimentar Robô</h2>
+<!-- Cabeça Rotação -->
+<form method="post" asp-page-handler="Movimentar">
+    <h4>Cabeça</h4>
+    <label>Rotação:</label>
+    <select name="valor" aria-label="Rotação da Cabeça">
+        <option value="" selected disabled>Selecione</option>
+        @foreach (var item in Enum.GetNames(typeof(EnumRoboCabecaRotacao)))
+        {
+            <option value="@item">@item</option>
+        }
+    </select>
+    <input type="hidden" name="componente" value="cabeca-rotacao" />
+    <button type="submit">Mover</button>
+</form>
+
+<!-- Cabeça Inclinação -->
+<form method="post" asp-page-handler="Movimentar">
+    <h4>Cabeça</h4>
+    <label>Inclinação:</label>
+    <select name="valor" aria-label="Inclinação da Cabeça">
+        <option value="" selected disabled>Selecione</option>
+        @foreach (var item in Enum.GetNames(typeof(EnumRoboCabecaInclinacao)))
+        {
+            <option value="@item">@item</option>
+        }
+    </select>
+    <input type="hidden" name="componente" value="cabeca-inclinacao" />
+    <button type="submit">Mover</button>
+</form>
+
+<!-- Braço Esquerdo Cotovelo -->
+<form method="post" asp-page-handler="Movimentar">
+    <h4>Braço Esquerdo</h4>
+    <label>Cotovelo:</label>
+    <select name="valor" aria-label="Cotovelo do Braço Esquerdo">
+        <option value="" selected disabled>Selecione</option>
+        @foreach (var item in Enum.GetNames(typeof(EnumRoboCotovelo)))
+        {
+            <option value="@item">@item</option>
+        }
+    </select>
+    <input type="hidden" name="componente" value="braco-esquerdo-cotovelo" />
+    <button type="submit">Mover</button>
+</form>
+
+<!-- Braço Esquerdo Pulso -->
+<form method="post" asp-page-handler="Movimentar">
+    <h3>Braço Esquerdo</h3>
+    <label>Pulso:</label>
+    <select name="valor" aria-label="Pulso do Braço Esquerdo">
+        <option value="" selected disabled>Selecione</option>
+        @foreach (var item in Enum.GetNames(typeof(EnumRoboPulso)))
+        {
+            <option value="@item">@item</option>
+        }
+    </select>
+    <input type="hidden" name="componente" value="braco-esquerdo-pulso" />
+    <button type="submit">Mover</button>
+</form>
+
+<!-- Braço Direito Cotovelo -->
+<form method="post" asp-page-handler="Movimentar">
+    <h3>Braço Direito</h3>
+    <label>Cotovelo:</label>
+    <select name="valor" aria-label="Cotovelo do Braço Direito">
+        <option value="" selected disabled>Selecione</option>
+        @foreach (var item in Enum.GetNames(typeof(EnumRoboCotovelo)))
+        {
+            <option value="@item">@item</option>
+        }
+    </select>
+    <input type="hidden" name="componente" value="braco-direito-cotovelo" />
+    <button type="submit">Mover</button>
+</form>
+
+<!-- Braço Direito Pulso -->
+<form method="post" asp-page-handler="Movimentar">
+    <h3>Braço Direito</h3>
+    <label>Pulso:</label>
+    <select name="valor" aria-label="Pulso do Braço Direito">
+        <option value="" selected disabled>Selecione</option>
+        @foreach (var item in Enum.GetNames(typeof(EnumRoboPulso)))
+        {
+            <option value="@item">@item</option>
+        }
+    </select>
+    <input type="hidden" name="componente" value="braco-direito-pulso" />
+    <button type="submit">Mover</button>
+</form>
